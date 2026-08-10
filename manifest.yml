@@ -1,10 +1,3 @@
-name: 文件快传
-package: lazycat.community.app.file-transfer
-version: 1.0.6
-min_os_version: 1.3.8
-description: Go/React开发的端到端webrtc的文件传输/文字传输/桌面共享，安全，隐私，数据不经过服务器。
-homepage: https://github.com/MatrixSeven/file-transfer-go
-author: MatrixSeven
 application:
     subdomain: file-transfer
     background_task: true
@@ -18,6 +11,5 @@ application:
 
 services:
     file-transfer:
-        container_name: file-transfer
-        # matrixseven/file-transfer-go:v1.0.6
+        # docker.io/matrixseven/file-transfer-go:1.0.6
         image: registry.lazycat.cloud/czyt/matrixseven/file-transfer-go:a62b7ee666e80cc6
