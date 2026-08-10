@@ -1,15 +1,13 @@
 application:
-    subdomain: file-transfer
-    background_task: true
-
-    public_path:
-        - /
-
-    upstreams:
-        - location: /
-          backend: http://file-transfer:8080/
-
+  subdomain: file-transfer
+  background_task: true
+  public_path:
+    - /
+  upstreams:
+    - location: /
+      backend: http://file-transfer:8080/
 services:
-    file-transfer:
-        # docker.io/matrixseven/file-transfer-go:1.0.6
-        image: registry.lazycat.cloud/czyt/matrixseven/file-transfer-go:a62b7ee666e80cc6
+  file-transfer:
+    # docker.io/matrixseven/file-transfer-go:1.0.6
+    # upstream: docker.io/matrixseven/file-transfer-go:1.1.0
+    image: registry.lazycat.cloud/czyt/matrixseven/file-transfer-go:2fa49c84fce6fba8
