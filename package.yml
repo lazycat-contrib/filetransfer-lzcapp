@@ -1,4 +1,5 @@
 package: lazycat.community.app.file-transfer
+license: MIT
 version: 1.1.0
 name: 文件快传
 description: Go/React开发的端到端webrtc的文件传输/文字传输/桌面共享，安全，隐私，数据不经过服务器。
